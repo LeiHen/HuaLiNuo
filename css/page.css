@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+/*  */
+.content .content_top{
+	
+}
+.content .content_top .wrap{
+	font-size: 60px;
+    line-height: 1.2em;
+    color: #fff;
+}
+
+
+/* 公司实景 */
+.live-action{
+	
+}
+.live-action ul{
+	text-align: center;
+}
+.live-action ul li{
+	width: 28%;
+    padding:0 1%;
+    display: inline-block;
+}
+.live-action ul li img{
+	
+}

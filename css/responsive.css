@@ -1,0 +1,343 @@
+@charset "utf-8";
+
+.visible_phone{
+	display: none;
+}
+.visible_tablet{
+	display: none;
+}
+.visible_desktop{
+	display: block;
+}
+
+
+.hidden_phone{
+	display: block;
+}
+.hidden_tablet{
+	display: block;
+}
+.hidden_desktop{
+	display: none;
+}
+
+
+@media (max-width: 767px) {
+  .visible_phone {
+    display: block;
+  }
+  .hidden_phone {
+    display: none;
+  }
+  
+  .visible_desktop {
+    display: none;
+  }
+  .hidden_desktop {
+    display: block;
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 979px) {
+  .visible_tablet {
+    display: block;
+  }
+  .hidden_tablet {
+    display: none;
+  }
+
+  .visible_desktop {
+    display: none;
+  }
+  .hidden_desktop {
+    display: block;
+  }
+}
+
+/* 水平状态的手机 android */
+@media (max-width: 360px) {
+  
+}
+
+
+/* 水平状态的手机及以下 iphone竖直 */
+@media (max-width: 480px) {
+  
+}
+
+/* 界于水平手机与竖直平板之间 */
+@media (max-width: 767px) {
+  
+}
+
+/* 界于竖直平板与水平平板/桌面之间 */
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+}
+
+
+/* 宽桌面 */
+@media (max-width: 1200px) {
+  
+  
+}
+
+
+/* 宽桌面 */
+@media (min-width: 1400px) {
+  
+  
+}
+
+
+/* 界于竖直平板与水平平板/桌面之间 */
+/*@media (min-width: 768px) and (max-width: 979px) {
+  
+}*/
+
+
+/*@media (max-width: 979px) {
+  
+}
+
+
+@media (min-width: 980px) {
+  
+}*/
+
+/* 宽桌面 */
+/*@media (min-width: 1200px) {
+  
+  
+}*/
+
+
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+}
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  border: 0;
+  width: 100%;
+}
+
+/*----responsive-design-----*/
+@media only screen and (max-width: 1366px) and (min-width: 1280px) {
+  .wrap{
+    width:90%;
+  }
+}
+@media only screen and (max-width: 1280px) and (min-width: 1024px) {
+  .wrap{
+    width:90%;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .wrap{
+    width:95%;
+  } 
+  .grid{
+    width:27%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .wrap{
+    width:95%;
+  }
+  .top-nav ul li a{
+    padding:40px 15px;
+  }
+  .grid{
+    width:24.8%;
+  }
+  .span_2_of_3 {
+    width:94%;
+    padding:3%; 
+  }
+  .footer{
+    padding:0;
+  }
+  .footer-grid h3{
+    margin-bottom:5px;
+  }
+  .col{ 
+    margin: 1% 0 1% 0%;
+  }
+  .span_1_of_3 {
+    width:94%;
+    padding:3%; 
+  }
+}
+/*  GO FULL WIDTH AT LESS THAN 640 PIXELS */
+@media only screen and (max-width: 640px){
+  .wrap{
+    width:95%;
+  }
+  .top-nav ul li a{
+    padding:41px 5px;
+    font-size:0.75em;
+  }
+  .grid{
+    float:none;
+    width:94%;
+    padding:3%;
+    margin:15px 0;
+  }
+  .content_top{
+    padding:10px 0;
+  }
+  .content_top:after{
+    top:-9px;
+  }
+  .special-grid{
+    float:none;
+    width:94%;
+    padding:3%;
+    margin-right:0;
+  } 
+  .specials{
+    padding:30px 0 0 0;
+  }
+  .specials-grids{
+    padding:10px 0;
+  }
+  .testmonials{
+    padding:0 0 30px 0;
+  }
+  .footer-grid{
+    float:none;
+    width:94%;
+    padding:3%;
+    margin-right:0;
+  }
+  .services{
+    padding:20px 0;
+  }
+  .images_1_of_2{
+    width:94%;
+    padding:3%; 
+  }
+  .span_2_of_3 {
+    width:94%;
+    padding:3%; 
+  }
+  .list_2_of_1{
+    width:78.2%;  
+  }
+  .error-page{
+    padding:20px 0;
+    min-height:0;
+  }
+  .col{ 
+    margin: 1% 0 1% 0%;
+  }
+  .span_1_of_3 {
+    width:94%;
+    padding:3%; 
+  }   
+   .contact-form input[type="text"],.contact-form textarea{
+    width:97%;
+  }
+}
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+  .wrap{
+    width:95%;
+  }
+  .logo{
+    float:none;
+    text-align:center;
+    padding:5px 0;
+  }
+  .span_2_of_3 {
+    width:90%;
+    padding:5%; 
+  }
+  .top-nav{
+    float:none;
+    text-align:center;
+  } 
+  .top-nav ul li{
+    float:none;
+  }
+  .top-nav ul li a{
+    padding:15px 20px;
+  }
+  .content-grids,.about-us{
+    padding:20px 0;
+  }
+  .testmonial-grid p{
+    width:100%;
+  }
+  .error-page p{
+    font-size:2em;
+  }
+  .error-page h3{
+    font-size:6em;
+  }
+  .col { 
+    margin:0;
+  }
+  .span_1_of_3 {
+    width:90%;
+    padding:5%; 
+  }
+  .contact-form input[type="text"],.contact-form textarea{
+    width:92%;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .wrap{
+    width:95%;
+  }
+  .top-nav ul li a{
+    padding:15px 4px;
+  }
+  .content_top p{
+    font-size:0.8em;
+    line-height:1.6em;
+    margin:5px 0 25px 0;
+  }
+  .specials-heading h3{
+    font-size:1.5em;
+  }
+  .special-grid p{
+    padding:0;
+  }
+  .testmonial-grid h3{
+    font-size:1.5em;
+    padding:5px 0;
+  }
+  .testmonial-grid p{
+    padding:0;
+  }
+  .about-info a{
+    font-size:0.8em;
+  }
+  .list_2_of_1 h3{
+    font-size:1.3em;
+  }
+}
