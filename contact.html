@@ -36,17 +36,17 @@
         <header class="header">
             <div class="wrap">
                 <div class="logo">
-                    <a href="index.html"><img src="./images/logo.png" title="logo" /></a>
+                    <a href="index.html"><img src="images/logo.png" title="logo" /></a>
                 </div>
                 <div class="top-nav">
                     <ul>
-                        <li class="active"><a href="index.html">首页</a></li>
+                        <li><a href="index.html">首页</a></li>
                         <li><a href="about.html">关于我们</a></li>
                         <li><a href="product.html">产品展示</a></li>
                         <li><a href="case.html">工程案例</a></li>
                         <li><a href="news.html">新闻中心</a></li>
                         <li><a href="joinUs.html">加入我们</a></li>
-                        <li><a href="contact.html">联系我们</a></li>
+                        <li class="active"><a href="contact.html">联系我们</a></li>
                     </ul>
                 </div>
                 <div class="clear"></div>
@@ -54,50 +54,61 @@
 		</header>
         <!---End-header---->
         
-        <!--start-image-slider---->
-        <div class="image-slider">
-            <!-- Slideshow 1 -->
-            <ul class="rslides" id="slider1">
-                <li><img src="images/banner/index/img_01_1280x450.jpg" alt=""></li>
-                <li><img src="images/banner/index/img_02_1280x450.jpg" alt=""></li>
-                <li><img src="images/banner/index/img_03_1280x450.jpg" alt=""></li>
-                <li><img src="images/banner/index/img_04_1280x450.jpg" alt=""></li>
-            </ul>
-            <!-- Slideshow 2 -->
-        </div>
-        <!--End-image-slider---->
-        <div class="clear"></div>
+        
         
 		<!---start-content---->
-		<div class="content">
-            <div class="content_top">
-			    	<div class="wrap">大屏租赁 传递价值 成就你我</div>
+		<div class="content contact">
+			<div class="wrap">
+			<!---start-contact---->
+			    <div class="section group">				
+                    <div class="col span_1_of_3">
+                        
+                        <div class="company_address contact">
+                            <h3>联系我们</h3>
+                            <p>联系人：袁经理</p>
+                            <p>手机：138 2878 5778</p>
+                            <p>邮箱：<a class="email-link" href="#">613936098@qq.com</a></p>
+                            <p>地址：深圳市宝安区福永镇怀德翠岗六区十二栋7楼北面 702</p>
+                        </div>
+                       
+                        <div class="contact-form">
+                            <h3>留言板</h3>
+                            <form method="post" action="404.html">
+                                <div>
+                                    <span><label>姓名</label></span>
+                                    <span><input name="userName" type="text" class="textbox"></span>
+                                </div>
+                                <div>
+                                    <span><label>电子邮件</label></span>
+                                    <span><input name="userEmail" type="text" class="textbox"></span>
+                                </div>
+                                <div>
+                                    <span><label>手机</label></span>
+                                    <span><input name="userPhone" type="text" class="textbox"></span>
+                                </div>
+                                <div>
+                                    <span><label>内容</label></span>
+                                    <span><textarea name="userMsg"> </textarea></span>
+                                </div>
+                               <div>
+                                    <span><input type="submit" class="mybutton" value="提交"></span>
+                              </div>
+                            </form>
+                        </div>
+                        
+                    </div>				
+				    <div class="col span_2_of_3">
+                        
+                        <div class="contact_info">
+                            <h3>地图</h3>
+                            <div class="map" id="dituContent"></div>
+                        </div>
+                        
+  				    </div>				
+			  </div>
             </div>
-			<div class="content-grids">
-				<div class="wrap">
-                     <div class="grid">
-                        <a href="#"><img src="images/case/img_01.jpg" title="image-name" /></a>
-                        <h3>灯光租赁</h3>
-                        <p>LED显示屏租赁提供LED大屏幕租赁、显示屏租赁、LED大屏幕出租等</p>
-                        <a class="button" href="case.html">More</a>
-                    </div>
-                    <div class="grid">
-                        <a href="#"><img src="images/case/img_02.jpg" title="image-name" /></a>
-                        <h3>LED租赁</h3>
-                        <p>LED显示屏租赁提供LED大屏幕租赁、显示屏租赁、LED大屏幕出租等</p>
-                        <a class="button" href="case.html">More</a>
-                    </div>
-                    <div class="grid last-grid">
-                        <a href="#"><img src="images/case/img_03.jpg" title="image-name" /></a>
-                        <h3>音响租赁</h3>
-                        <p>LED显示屏租赁提供LED大屏幕租赁、显示屏租赁、LED大屏幕出租等</p>
-                        <a class="button" href="case.html">More</a>
-                    </div>
-                    <div class="clear"> </div>
-			    </div>
-		     </div>
-			
-			
+			<!---End-contact---->
+			<div class="clear"></div>
 		</div>
 		<!---End-content---->
 		<div class="clear"></div>
@@ -159,16 +170,14 @@
         <script src="js/page.js"></script>
         <script src="js/responsiveslides.min.js"></script>
         
+        <script src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+
+                      
 		<script type="text/javascript">	
 			//初始化 统一入口
 			function init(){
-                $(function () {
-                    // Slideshow 1
-                    $("#slider1").responsiveSlides({
-                        maxwidth: 2500,
-                        speed: 600
-                    });
-                });
+                //创建和初始化地图
+                initMap();
 			}
 			init();
 		</script>

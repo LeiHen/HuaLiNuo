@@ -106,6 +106,7 @@ a:hover{text-decoration:none;cursor:pointer}
 .ml20{margin-left:20px}
 .ml30{margin-left:30px}
 .ml50{margin-left:50px}
+.ml120{margin-left:120px}
 .ml100{margin-left:100px}
 .mr0{margin-right:0px}
 .mr5{margin-right:5px}
@@ -146,6 +147,8 @@ a:hover{text-decoration:none;cursor:pointer}
 .pl20{padding-left:20px}
 .pl30{padding-left:30px}
 .pl50{padding-left:50px}
+.pl120{padding-left:120px}
+.pl240{padding-left:240px}
 .pl100{padding-left:100px}
 .pr0{padding-right:0px}
 .pr5{padding-right:5px}

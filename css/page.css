@@ -11,6 +11,21 @@
 }
 
 
+
+/* 关于我们 */
+.about{
+    
+}
+
+/* 工程案例 */
+.case{
+
+}
+.case .content-warp .grid{
+    margin-bottom: 40px;
+}
+
+
 /* 公司实景 */
 .live-action{
 	
@@ -24,5 +39,103 @@
     display: inline-block;
 }
 .live-action ul li img{
+	width: 100%;
+}
+
+
+
+/* 产品展示 */
+.product{
+
+}
+.product .meun{
+    
+}
+.product .meun .grid{
+    
+}
+.product .meun .grid:hover{
+    
+}
+.product .content-wrap{ 
+	/*display: none; */
+	padding: 40px 0;
+}
+.product .content-wrap:first-child{
+    display: block;
+    display: none;
+    background: red;
+}
+.product .content-wrap .grid{
+    margin-bottom: 40px;
+}
+
+
+/* 产品对比 */ 
+.product .contrast{
+
+}
+.product .contrast img{
+	margin: 0 auto;
+	width: 100%;
+}
+
+/* 订单流程 */ 
+.product .flow{
 	
+}
+.product .flow img{
+	margin: 0 auto;
+	width: 100%;
+}
+
+
+/* 产品详细 */
+.product-detail{
+	
+}
+
+/* 新闻中心 */
+.news{ }
+.news .listimg_2_of_1{ width: 38.2%; }
+.news .list_2_of_1{ width: 40%; }
+.news .images_1_of_2 img{ padding-top: 0; }
+
+/* 新闻详细 */
+.news-detail{ }
+.news-detail .m-article-detail{ max-width: 800px; margin:0 auto; }
+
+
+/* 加入我们 */
+.join-us{ }
+.join-us .grid{ float: none; display: inline-block; vertical-align: top; }
+
+
+/* 联系我们 */
+.contact{ }
+.contact .company_address{ }
+.contact .company_address p,
+.contact .company_address p .email-link{ /*color: rgba(85, 81, 81, 0.84); */ color:rgba(85, 81, 81, 0.84); }
+
+
+/* 百度地图 */
+.contact .contact_info .map{ height: 586px; width: 100%; }
+.contact .contact_info img{ max-width:none; }
+.iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
+.iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
+
+
+
+/* css3动画 */
+.m-lists .meun .grid,
+.m-lists .meun .grid h3,
+.m-lists2 .meun-wrap .grid,
+.m-lists2 .meun-wrap .grid h3,
+.menu-sub .link .wire,
+.menu-sub .link .ico{
+    -webkit-transition: all .4s ease-out;
+    -moz-transition: all .4s ease-out;
+    -ms-transition: all .4s ease-out;
+    -o-transition: all .4s ease-out;
+    transition: all .4s ease-out;
 }
