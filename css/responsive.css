@@ -180,6 +180,7 @@
   }
   .grid{
     width:24.8%;
+    width:29%;
   }
   .span_2_of_3 {
     width:94%;
@@ -203,6 +204,11 @@
  /* .m-product-detail .pl{
     padding: 0;
   }*/
+
+  .g-meun-content .g-content {
+    margin-left: 0;
+    width: 100%;
+  }
   .m-product-detail .img-wrap{
     width: 100%;
     float: none;
@@ -302,6 +308,8 @@
     margin-left:0;
     margin-top: 20px;
   }
+
+
 
   .m-product-detail .pl{
     padding: 0;

@@ -69,10 +69,10 @@
                 
                 
                 <!-- 产品详情 ]]-->
-                <div class="wrap content-warp">
+                <div class="wrap content-wrap">
                     <div class="content-grids m-lists">
                         <div class="wrap">
-                             <div class="grid">
+                            <div class="grid">
                                 <a href="#"><img src="images/case/img_01.jpg" title="image-name" /></a>
                                 <h3>灯光租赁</h3>
                                 <p>LED显示屏租赁提供LED大屏幕租赁、显示屏租赁、LED大屏幕出租等</p>
@@ -85,6 +85,7 @@
                                 <p>LED显示屏租赁提供LED大屏幕租赁、显示屏租赁、LED大屏幕出租等</p>
                                 <a class="button" href="caseDetail.html">More</a>
                             </div>
+                            
                             <div class="grid last-grid">
                                 <a href="#"><img src="images/case/img_03.jpg" title="image-name" /></a>
                                 <h3>音响租赁</h3>
@@ -113,9 +114,26 @@
                                 <a class="button" href="caseDetail.html">More</a>
                             </div>
                             
-                            <div class="clear"> </div>
+                            
+                            
+                            <div class="clear"></div>
                         </div>
-                    </div>                
+                    </div>
+                    
+                    <div class="page-wrap">
+                        <ul class="m-page">
+                            <li><a href="">首页</a></li>
+                            <li><a href="" rel="prev">上一页</a></li>
+                            <li><a href="" class="hover">1</a></li>
+                            <li><a href="">2</a></li>
+                            <li><a href="">3</a></li>
+                            <li><a href="">4</a></li>
+                            <li><a href="">5</a></li>
+                            <li><a href="" rel="next">下一页</a></li>
+                            <li><a href="">末页</a></li>
+                        </ul>
+                    </div>
+                    
                     
                 </div>
                 <!-- 产品详情 [[-->
@@ -201,9 +219,11 @@
                 if (window.PIE) {
                     $('.rounded').each(function() {
                         PIE.attach(this);
-                    });    
+                    });
                 }
             });
+            //清除列表边框
+            $('.case .m-lists .wrap .grid:nth-child(3n+3)');
         </script>
         
         <![endif]-->

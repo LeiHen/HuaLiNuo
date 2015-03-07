@@ -21,85 +21,58 @@
 .case{
 
 }
-.case .content-warp .grid{
+.case .content-wrap .grid{
     margin-bottom: 40px;
+}
+
+.case .page-wrap{
+	padding: 40px 0;
+	text-align: right;
 }
 
 
 /* 公司实景 */
-.live-action{
-	
-}
-.live-action ul{
-	text-align: center;
-}
-.live-action ul li{
-	width: 28%;
-    padding:0 1%;
-    display: inline-block;
-}
-.live-action ul li img{
-	width: 100%;
-}
+.live-action{ }
+.live-action ul{ text-align: center; }
+.live-action ul li{ width: 28%; padding:0 1%; display: inline-block; }
+.live-action ul li img{ width: 100%; }
 
 
 
 /* 产品展示 */
-.product{
-
-}
-.product .meun{
-    
-}
-.product .meun .grid{
-    
-}
-.product .meun .grid:hover{
-    
-}
-.product .content-wrap{ 
-	/*display: none; */
-	padding: 40px 0;
-}
-.product .content-wrap:first-child{
-    display: block;
-    display: none;
-    background: red;
-}
-.product .content-wrap .grid{
-    margin-bottom: 40px;
-}
+.product{ }
+.product .meun{ }
+.product .meun .grid{ }
+.product .meun .grid:hover{ }
+.product .content-wrap{ /*display: none; */
+	padding: 40px 0; }
+.product .content-wrap .item{ display: none; }
+.product .content-wrap .item:first-child{ display: block; }
+.product .content-wrap .grid{ margin-bottom: 40px; }
 
 
 /* 产品对比 */ 
-.product .contrast{
-
-}
-.product .contrast img{
-	margin: 0 auto;
-	width: 100%;
-}
+.product .contrast{ }
+.product .contrast img{ margin: 0 auto; width: 100%; }
 
 /* 订单流程 */ 
-.product .flow{
-	
-}
-.product .flow img{
-	margin: 0 auto;
-	width: 100%;
-}
+.product .flow{ }
+.product .flow img{ margin: 0 auto; width: 100%; }
 
 
 /* 产品详细 */
-.product-detail{
-	
-}
+.product-detail{ }
+
 
 /* 新闻中心 */
 .news{ }
 .news .listimg_2_of_1{ width: 38.2%; }
 .news .list_2_of_1{ width: 40%; }
 .news .images_1_of_2 img{ padding-top: 0; }
+.news .page-wrap{
+	padding: 40px 0;
+	text-align: right;
+}
 
 /* 新闻详细 */
 .news-detail{ }
@@ -132,7 +105,8 @@
 .m-lists2 .meun-wrap .grid,
 .m-lists2 .meun-wrap .grid h3,
 .menu-sub .link .wire,
-.menu-sub .link .ico{
+.menu-sub .link .ico,
+.m-page li a{
     -webkit-transition: all .4s ease-out;
     -moz-transition: all .4s ease-out;
     -ms-transition: all .4s ease-out;

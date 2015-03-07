@@ -67,7 +67,7 @@
         
 		<!---start-content---->
 		<div class="content">
-            <div class="content-grids m m-lists about">
+            <div class="content-grids m m-lists about" id="aboutBox">
                 <div class="wrap meun">
                     <div class="grid">
                         <a><img src="images/about/img_brief.jpg" title="image-name" /></a>
@@ -84,7 +84,7 @@
                     <div class="clear"></div>
                 </div>
                 
-                <div class="content-warp wrap">
+                <div class="content-wrap wrap">
                     <div class="item u-editor-txt ">
                         <p> 华立诺是一家集研发、生产、营销、售后服务于一体的行业多媒体视觉体验显示系统解决方案的高科技企业。华立诺以打造世界行业多媒体视觉体验第一品牌，并致力成为行业最大的OEM和ODM供应商之一。公司以市场为导向，不断创新推出适应市场需求的高品质液晶显示终端产品。公司拥有有一支强大的技术研发队伍和一批专业的管理人才，实力雄厚，售后服务完善。</p>
                         <p>华立诺大屏租赁，专注于商业显示大屏的租赁服务，致力于成为会展显示设备租赁行业领导者。秉承“专业、共享”的理念，为客户的“展览展示、商务活动、礼仪庆典”等活动，打造全新的数字视觉展示效果。专业提供“数字标牌广告机、高清拼接大屏、高清监视器、多媒体触摸一体机”等设备的租赁服务。华立诺大屏租赁物超所值，将为您带来搬运、安装、调试、拆卸等一站式服务，让您亲身感受到买不如租带来的方便舒适。</p>
@@ -105,6 +105,7 @@
                             <li><img src="images/about/live-action/img_03.jpg" alt=""></li>
                         </ul>
                     </div>
+                    
                 </div>
                 
 		     </div>
@@ -174,6 +175,8 @@
 			//初始化 统一入口
 			function init(){
                 
+                //切换
+                tabBanner('aboutBox');
 			}
 			init();
 		</script>

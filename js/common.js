@@ -122,6 +122,52 @@ function createIcon(json){
 /* @end **/
 
 
+/**
+* @name     :
+* @author   :Nice
+* @version  :
+* @explain  :
+*/
+function tabBanner(ID){
+    var e=$('#'+ID);
+
+    var menu=e.find('.meun');
+    var grid=menu.find('.grid');
+    var gridL=grid.length;
+
+    var contentWarp=e.find('.content-wrap');
+    var item=contentWarp.find('.item');
+
+    grid.click(function(event) {
+        var i=$(this).index();
+        
+        grid.removeClass('hover');
+        $(this).addClass('hover');
+
+        item.css({
+            display: 'none'
+        });
+        $(item[i]).css({
+            display: 'block'
+        });
+
+    });
+
+}
+/* @end **/
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /**
 * @name		:
