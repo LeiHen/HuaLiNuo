@@ -2,10 +2,10 @@
 
 /*  */
 .content .content_top{
-	
+    
 }
 .content .content_top .wrap{
-	font-size: 60px;
+    font-size: 60px;
     line-height: 1.2em;
     color: #fff;
 }
@@ -24,11 +24,14 @@
 .case .content-wrap .grid{
     margin-bottom: 40px;
 }
+.case .content-wrap .grid:nth-child(3n+3){ margin-right: 0px; }
+.case .content-wrap .cmr{ margin-right: 0px; }
 
 .case .page-wrap{
-	padding: 40px 0;
-	text-align: right;
+    padding: 40px 0;
+    text-align: right;
 }
+
 
 
 /* 公司实景 */
@@ -42,13 +45,16 @@
 /* 产品展示 */
 .product{ }
 .product .meun{ }
-.product .meun .grid{ }
+.product .meun .grid{}
 .product .meun .grid:hover{ }
 .product .content-wrap{ /*display: none; */
-	padding: 40px 0; }
+    padding: 40px 0; }
 .product .content-wrap .item{ display: none; }
 .product .content-wrap .item:first-child{ display: block; }
 .product .content-wrap .grid{ margin-bottom: 40px; }
+
+.product .content-wrap .grid:nth-child(3n+3){ margin-right: 0px; }
+.product .content-wrap .cmr{ margin-right: 0px; }
 
 
 /* 产品对比 */ 
@@ -70,8 +76,8 @@
 .news .list_2_of_1{ width: 40%; }
 .news .images_1_of_2 img{ padding-top: 0; }
 .news .page-wrap{
-	padding: 40px 0;
-	text-align: right;
+    padding: 40px 0;
+    text-align: right;
 }
 
 /* 新闻详细 */
